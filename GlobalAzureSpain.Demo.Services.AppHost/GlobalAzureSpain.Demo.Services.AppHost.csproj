@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsAspireHost>true</IsAspireHost>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="appsettings - Copy.Development.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting" Version="[8.0.0-preview.5.24201.12,8]" />
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="[8.0.0-preview.5.24201.12,8]" />
+        <PackageReference Include="Aspire.Hosting.Dapr" Version="[8.0.0-preview.5.24201.12,8]" />
+        <PackageReference Include="Aspire.Hosting.NodeJs" Version="[8.0.0-preview.5.24201.12,8]" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\GlobalAzureSpain.Demo.Bot\GlobalAzureSpain.Demo.Bot.csproj" />
+        <ProjectReference Include="..\GlobalAzureSpain.Demo.Services.FlightsCatalog\GlobalAzureSpain.Demo.Services.FlightsCatalog.csproj" />
+        <ProjectReference Include="..\GlobalAzureSpain.Demo.Services.FunCatalog\GlobalAzureSpain.Demo.Services.FunCatalog.csproj" />
+        <ProjectReference Include="..\GlobalAzureSpain.Demo.Services.HotelsCatalog\GlobalAzureSpain.Demo.Services.HotelsCatalog.csproj" />
+        <ProjectReference Include="..\GlobalAzureSpain.Demo.Services.VacationPlanner\GlobalAzureSpain.Demo.Services.VacationPlanner.csproj" />
+    </ItemGroup>
+
+</Project>
